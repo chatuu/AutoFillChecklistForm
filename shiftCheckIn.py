@@ -32,11 +32,6 @@ def GetCoordinators():
 
     return Coordinators
 
-    # with open("Coordinators.txt", "a") as file:
-    #     for coord in Cordinators:
-    #         file.write(coord+"\n")
-    #     file.close()
-
 
 def fillCheckIn():
     driver = webdriver.Chrome("/Users/chatuu/Downloads/chromedriver")
@@ -66,7 +61,6 @@ def fillCheckIn():
 
 def main():
     fillCheckIn()
-    # GetCoordinators()
 
 
 if __name__ == '__main__':
