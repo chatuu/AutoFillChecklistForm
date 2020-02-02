@@ -29,6 +29,7 @@ def GetCoordinators():
             deputy = words[3]+" "+words[4]
             print("Found Deputy Run Coordinator: " + deputy)
     Coordinators = [runCoord, deputy]
+    driver1.close()
 
     return Coordinators
 
