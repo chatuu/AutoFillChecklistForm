@@ -31,7 +31,7 @@ def takeScreens():
     urlretrieve(url, 'Screen03.png')
 
     driver.get(
-        "http://novadaq-test-master.fnal.gov:8083/snapshot/ShowImage.jsp?id=4a031910")
+        "http://novadaq-test-master.fnal.gov:8083/snapshot/ShowImage.jsp?id=8ecb719a")
     image = driver.find_element_by_xpath('/html/body/img')
     url = image.get_attribute('src')
     urlretrieve(url, 'Screen04.png')
@@ -111,7 +111,7 @@ def fillChecklist(output):
     driver.get(
         "http://dbweb5.fnal.gov:8080/ECL/novatestbeam/E/create_entry?f=Shift+Checklist")
     driver.find_element_by_name("username").send_keys("ckuruppu")
-    driver.find_element_by_name("password").send_keys("USCChatuu123!")
+    driver.find_element_by_name("password").send_keys("Chatuu314159!")
     submit_button = driver.find_element_by_xpath(
         "/html/body/div[2]/div/div[2]/table/tbody/tr/td[2]/div[2]/form/table/tbody/tr[3]/td[2]/input")
     submit_button.submit()
